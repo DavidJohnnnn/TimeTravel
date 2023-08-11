@@ -1,0 +1,19 @@
+.NavContain {
+    max-width: 80%;
+    margin: 0 auto;
+    padding-left: 0;
+    background-color: #eeeeee;
+}
+
+.TimeNav {
+    background-color: #eeeeee;
+}
+
+  
+.TimeNavBrand {
+    font-size: 50px;
+}
+  
+.TimeNavItem {
+    font-size: 20px;
+}
