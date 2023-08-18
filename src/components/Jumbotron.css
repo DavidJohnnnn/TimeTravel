@@ -1,0 +1,38 @@
+.container-fluid .jumbotron, .container .jumbotron, .jumbotron {
+    max-width: 80%;
+    border-radius: 6px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+  }
+  
+  @media screen and (min-width: 768px)
+  {
+  .container-fluid .jumbotron, .container .jumbotron, .jumbotron {
+      padding-left: 60px;
+      padding-right: 60px;
+  }
+  }
+  
+  @media screen and (min-width: 768px)
+  {
+  .jumbotron {
+      padding-bottom: 48px;
+      padding-top: 48px;
+  }
+  }
+  
+.jumbotron {
+    background-color: #eee;
+    padding-left: 10px;
+    padding-right: 60px;
+    margin-top: 30px;
+    padding-bottom: 10vh;
+    padding-top: 30vh;
+    background-image: url(https://picsum.photos/seed/picsum/200/300);
+    background-size: cover;
+}
+
+.jumboCard {
+    background-color: rgba(255, 0, 0, 25%);
+}
