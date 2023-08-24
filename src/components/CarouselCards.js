@@ -1,151 +1,76 @@
 import Carousel from 'react-bootstrap/Carousel';
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import CarouselRow from './CarouselRow';
+import CarouselCard from './CarouselCard';
 
 const CarouselCards = () => {
   return (
     <Carousel>
       <Carousel.Item>
-        <Container className="px-4">
-            <Row className="g-2">
-                <Col className="p-4">
-                    <Card>
-                        <Card.Img variant="top" src="https://picsum.photos/id/11/200/300" style={{ height: 200 }}/>
-                        <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
-                            </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col className="p-4">
-                    <Card>
-                        <Card.Img variant="top" src="https://picsum.photos/id/11/200/300" style={{ height: 200 }}/>
-                        <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
-                            </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col className="p-4">
-                    <Card>
-                        <Card.Img variant="top" src="https://picsum.photos/id/11/200/300" style={{ height: 200 }}/>
-                        <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
-                            </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                
-            </Row>
-        </Container>
+        <CarouselRow>
+            <CarouselCard 
+                CardImg={"https://picsum.photos/id/11/200/300"}
+                CardTitle={"Lorem Ipsum 1"}
+                CardText={"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."}
+                buttonName={"Go Somewhere"}
+                />
+            <CarouselCard 
+                CardImg={"https://picsum.photos/id/11/200/300"}
+                CardTitle={"Lorem Ipsum 2"}
+                CardText={"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."}
+                buttonName={"Go Somewhere"}
+                />
+            <CarouselCard 
+                CardImg={"https://picsum.photos/id/11/200/300"}
+                CardTitle={"Lorem Ipsum 3"}
+                CardText={"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."}
+                buttonName={"Go Somewhere"}
+                />
+        </CarouselRow>
 
       </Carousel.Item>
       <Carousel.Item>
-      <Container className="px-4">
-            <Row className="g-2">
-                <Col className="p-4">
-                    <Card>
-                        <Card.Img variant="top" src="https://picsum.photos/id/11/200/300" style={{ height: 200 }}/>
-                        <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
-                            </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col className="p-4">
-                    <Card>
-                        <Card.Img variant="top" src="https://picsum.photos/id/11/200/300" style={{ height: 200 }}/>
-                        <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
-                            </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col className="p-4">
-                    <Card>
-                        <Card.Img variant="top" src="https://picsum.photos/id/11/200/300" style={{ height: 200 }}/>
-                        <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
-                            </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                
-            </Row>
-        </Container>
+        <CarouselRow>
+                <CarouselCard 
+                    CardImg={"https://picsum.photos/id/11/200/300"}
+                    CardTitle={"Lorem Ipsum 4"}
+                    CardText={"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."}
+                    buttonName={"Go Somewhere"}
+                    />
+                <CarouselCard 
+                    CardImg={"https://picsum.photos/id/11/200/300"}
+                    CardTitle={"Lorem Ipsum 5"}
+                    CardText={"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."}
+                    buttonName={"Go Somewhere"}
+                    />
+                <CarouselCard 
+                    CardImg={"https://picsum.photos/id/11/200/300"}
+                    CardTitle={"Lorem Ipsum 6"}
+                    CardText={"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."}
+                    buttonName={"Go Somewhere"}
+                    />
+            </CarouselRow>
       </Carousel.Item>
       <Carousel.Item>
-      <Container className="px-4">
-            <Row className="g-2">
-                <Col className="p-4">
-                    <Card>
-                        <Card.Img variant="top" src="https://picsum.photos/id/11/200/300" style={{ height: 200 }}/>
-                        <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
-                            </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col className="p-4">
-                    <Card>
-                        <Card.Img variant="top" src="https://picsum.photos/id/11/200/300" style={{ height: 200 }}/>
-                        <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
-                            </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col className="p-4">
-                    <Card>
-                        <Card.Img variant="top" src="https://picsum.photos/id/11/200/300" style={{ height: 200 }}/>
-                        <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
-                            </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                
-            </Row>
-        </Container>
+        <CarouselRow>
+                <CarouselCard 
+                    CardImg={"https://picsum.photos/id/11/200/300"}
+                    CardTitle={"Lorem Ipsum 7"}
+                    CardText={"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."}
+                    buttonName={"Go Somewhere"}
+                    />
+                <CarouselCard 
+                    CardImg={"https://picsum.photos/id/11/200/300"}
+                    CardTitle={"Lorem Ipsum 8"}
+                    CardText={"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."}
+                    buttonName={"Go Somewhere"}
+                    />
+                <CarouselCard 
+                    CardImg={"https://picsum.photos/id/11/200/300"}
+                    CardTitle={"Lorem Ipsum 9"}
+                    CardText={"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."}
+                    buttonName={"Go Somewhere"}
+                    />
+            </CarouselRow>
       </Carousel.Item>
     </Carousel>
   );

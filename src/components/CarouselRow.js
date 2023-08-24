@@ -9,8 +9,7 @@ const CarouselRow = (props) => {
   return (
         <Container className="px-4">
             <Row className="g-2">
-                props.children
-                
+                {props.children}
             </Row>
         </Container>
   );
