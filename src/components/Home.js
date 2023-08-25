@@ -3,6 +3,7 @@ import Jumbotron from './Jumbotron';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Page.css';
 import CarouselCards from './CarouselCards';
+import AccordianEl from './AccordianEl';
 
 
 function Home() {
@@ -16,6 +17,7 @@ function Home() {
       />
       <br />
       <CarouselCards />
+      <AccordianEl />
     </Container>
   );
 }
