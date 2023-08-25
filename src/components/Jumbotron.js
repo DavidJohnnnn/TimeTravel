@@ -8,16 +8,16 @@ import "./Jumbotron.css";
 
 function Jumbotron (props) {
     return (
-        <Container className="jumbotron">
+        <Container className="jumbotron" style={ {backgroundImage: "url(" + props.JumImg + ")"}}>
             <Row>
                 <Col xs={7}>
                     <Card className="jumboCard">
                         <Card.Body>
-                            <Card.Title>Special title treatment</Card.Title>
+                            <Card.Title>{props.CardTle}</Card.Title>
                             <Card.Text>
-                            With supporting text below as a natural lead-in to additional content.
+                            {props.CardTxt}
                             </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
+                            <Button variant="primary">{props.BtnTxt}</Button>
                         </Card.Body>
                     </Card>
                 </Col>
