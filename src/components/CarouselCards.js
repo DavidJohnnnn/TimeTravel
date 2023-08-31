@@ -3,28 +3,38 @@ import CarouselRow from './CarouselRow';
 import CarouselCard from './CarouselCard';
 
 const CarouselCards = () => {
+  let exampleJSON = require('../example.json');
+  console.log(exampleJSON);
+
+    let ans = exampleJSON.map((variant) => (
+      <CarouselCard
+        CardImg={variant.cardimage}
+        CardTitle={variant.cardtitle}
+        CardText={variant.cardtext}
+        buttonName={variant.buttonname}
+      />
+    ));
+    console.log(ans);
+
+  let CCards = [<CarouselCard 
+    CardImg={"https://picsum.photos/id/11/200/300"}
+    CardTitle={"Lorem Ipsum 1"}
+    CardText={"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."}
+    buttonName={"Go Somewhere"}
+    />,
+<CarouselCard 
+    CardImg={"https://picsum.photos/id/11/200/300"}
+    CardTitle={"Lorem Ipsum 2"}
+    CardText={"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."}
+    buttonName={"Go Somewhere"}
+    />];
+
   return (
     <Carousel>
       <Carousel.Item>
         <CarouselRow>
-            <CarouselCard 
-                CardImg={"https://picsum.photos/id/11/200/300"}
-                CardTitle={"Lorem Ipsum 1"}
-                CardText={"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."}
-                buttonName={"Go Somewhere"}
-                />
-            <CarouselCard 
-                CardImg={"https://picsum.photos/id/11/200/300"}
-                CardTitle={"Lorem Ipsum 2"}
-                CardText={"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."}
-                buttonName={"Go Somewhere"}
-                />
-            <CarouselCard 
-                CardImg={"https://picsum.photos/id/11/200/300"}
-                CardTitle={"Lorem Ipsum 3"}
-                CardText={"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."}
-                buttonName={"Go Somewhere"}
-                />
+
+            {ans}
         </CarouselRow>
 
       </Carousel.Item>

@@ -1,0 +1,19 @@
+[
+    {
+      "cardimage": "https://picsum.photos/id/11/200/300",
+      "cardtitle": "Lorem Ipsum 1a",
+      "cardtext": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+      "buttonname": "Go Somewhere"
+    },
+    {
+      "cardimage": "https://picsum.photos/id/11/200/300",
+      "cardtitle": "Lorem Ipsum 2a",
+      "cardtext": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+      "buttonname": "Go Somewhere"
+    },
+    {
+      "cardimage": "https://picsum.photos/id/11/200/300",
+      "cardtitle": "Lorem Ipsum 3a",
+      "cardtext": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+      "buttonname": "Go Somewhere"
+    }]
