@@ -3,7 +3,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import AccordianEl from './AccordianEl';
 
-function ContainerFluidExample() {
+function AccordianGroup() {
   return (
     <Container className="px-4">
       <Row className="g-2">
@@ -20,3 +20,5 @@ function ContainerFluidExample() {
     </Container>
   );
 }
+
+export default AccordianGroup;
