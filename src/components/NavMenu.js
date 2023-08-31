@@ -26,7 +26,7 @@ function NavMenu () {
                             </NavDropdown>
                         </Nav>
                         <Nav className="justify-content-end">
-                            <Nav.Link as={Link} to="/Link1" className="TimeNavItem justify-content-end"><NavLink to='/'>Home</NavLink></Nav.Link>
+                            <Nav.Link as={Link} to="/" className="TimeNavItem justify-content-end"><NavLink to='/'>Home</NavLink></Nav.Link>
                             <Nav.Link as={Link} to="/About" className="TimeNavItem justify-content-end">About</Nav.Link>
                             <Nav.Link as={Link} to="/Contact" className="TimeNavItem justify-content-end">Contact</Nav.Link>
                             <Nav.Link as={Link} to="/Link4" className="TimeNavItem justify-content-end">Link 4</Nav.Link>

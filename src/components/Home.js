@@ -16,8 +16,18 @@ function Home() {
         BtnTxt="Go somewhere"
       />
       <br />
+      <br />
+      
       <CarouselCards />
+
+      <br />
+      <br />
+
+
       <AccordianGroup />
+
+      <br />
+      <br />
     </Container>
   );
 }
