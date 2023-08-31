@@ -8,6 +8,8 @@ import Row from 'react-bootstrap/Row';
 const CarouselRow = (props) => {
   return (
         <Container className="px-4">
+          <h1>Lorem Ipsum</h1>
+          <h4>Lorem IpsumvLorem IpsumLorem Ipsum</h4>
             <Row className="g-2">
                 {props.children}
             </Row>

@@ -21,7 +21,7 @@ function Jumbotron (props) {
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col></Col>
+                <Col></Col> {/* Space added for this column */}
             </Row>
         </Container>
     );
