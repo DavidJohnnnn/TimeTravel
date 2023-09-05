@@ -3,7 +3,14 @@ import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 
 const CarouselCard = (props) => {
-  return (
+    if (props.empty === true) {
+        return (
+            <Col className="p-4">
+                
+            </Col>       
+        );
+    }
+    return (
         <Col className="p-4">
             <Card>
                 <Card.Img variant="top" src={props.CardImg} style={{ height: 200 }}/>
@@ -15,7 +22,7 @@ const CarouselCard = (props) => {
             </Card>
         </Col>
                 
-  );
+    );
 }
 
 export default CarouselCard;

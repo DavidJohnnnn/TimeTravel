@@ -14,33 +14,29 @@ const CarouselCards = () => {
     />
   ));
 
-  // let ans = []
-  // for (let j = 0; j < exampleJSON.length; j++) {
-  //   ans.push(
-  //     <CarouselCard
-  //     CardImg={exampleJSON[j].cardimage}
-  //     CardTitle={exampleJSON[j].cardtitle}
-  //     CardText={exampleJSON[j].cardtext}
-  //     buttonName={exampleJSON[j].buttonname}
-  //     />
-  //   );
-  // }
+  if (ans.length % 3 === 1) {
+    ans.push(<CarouselCard empty={true} />, <CarouselCard empty={true} />);
+  }
+
+  if (ans.length % 3 === 2) {
+    ans.push(<CarouselCard empty={true} />);
+  }
 
   console.log(ans);
   
   let final = [];
 
-  for (let i=0; i < ans.length; i+= 3) {
-    
-    
+  for (let i=0; i < ans.length; i+= 3) {    
     final.push(
       <Carousel.Item>
         <CarouselRow>
-            {ans.toSpliced(i, i+3)}
+            {ans.slice(i, i+3)}
         </CarouselRow>
       </Carousel.Item>
     );
   }
+
+
 
   console.log(final);
 
