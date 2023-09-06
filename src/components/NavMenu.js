@@ -18,11 +18,11 @@ function NavMenu () {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
                             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="/">List 1</NavDropdown.Item>
-                                <NavDropdown.Item href="">List 1</NavDropdown.Item>
-                                <NavDropdown.Item href="">List 2</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/dLink1">List 1</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/dLink2">List 1</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/dLink3">List 2</NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="">List 3</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="dLink4">List 3</NavDropdown.Item>
                             </NavDropdown>
                         </Nav>
                         <Nav className="justify-content-end">
