@@ -3,10 +3,14 @@ import CarouselRow from './CarouselRow';
 import CarouselCard from './CarouselCard';
 
 const CarouselCards = () => {
+  /* importing set of cards from local folder as JSON */
   let exampleJSON = require('../example.json');
   console.log(exampleJSON);
+  
+  /* creating a set of cards for that can be inserted into carousel */
   let ans = exampleJSON.map((variant) => (
     <CarouselCard
+      height={200}
       CardImg={variant.cardimage}
       CardTitle={variant.cardtitle}
       CardText={variant.cardtext}
@@ -14,18 +18,19 @@ const CarouselCards = () => {
     />
   ));
 
+
+  /* If one set of cards has two empty cards */
   if (ans.length % 3 === 1) {
     ans.push(<CarouselCard empty={true} />, <CarouselCard empty={true} />);
   }
 
+  /* if one carousel row has one empty card */
   if (ans.length % 3 === 2) {
     ans.push(<CarouselCard empty={true} />);
   }
 
-  console.log(ans);
-  
+  /* properly adding the carousel  */
   let final = [];
-
   for (let i=0; i < ans.length; i+= 3) {    
     final.push(
       <Carousel.Item>
@@ -36,71 +41,12 @@ const CarouselCards = () => {
     );
   }
 
-
-
-  console.log(final);
-
+  /* Carousel item, row etc is added to carousel */
   return (
     <Carousel>
       {final}
     </Carousel>
   );
-
-  // return (
-  //   <Carousel>
-  //     <Carousel.Item>
-  //       <CarouselRow>
-
-  //           {ans}
-  //       </CarouselRow>
-
-  //     </Carousel.Item>
-  //     <Carousel.Item>
-  //       <CarouselRow>
-  //               <CarouselCard 
-  //                   CardImg={"https://picsum.photos/id/11/200/300"}
-  //                   CardTitle={"Lorem Ipsum 4"}
-  //                   CardText={"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."}
-  //                   buttonName={"Go Somewhere"}
-  //                   />
-  //               <CarouselCard 
-  //                   CardImg={"https://picsum.photos/id/11/200/300"}
-  //                   CardTitle={"Lorem Ipsum 5"}
-  //                   CardText={"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."}
-  //                   buttonName={"Go Somewhere"}
-  //                   />
-  //               <CarouselCard 
-  //                   CardImg={"https://picsum.photos/id/11/200/300"}
-  //                   CardTitle={"Lorem Ipsum 6"}
-  //                   CardText={"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."}
-  //                   buttonName={"Go Somewhere"}
-  //                   />
-  //           </CarouselRow>
-  //     </Carousel.Item>
-  //     <Carousel.Item>
-  //       <CarouselRow>
-  //               <CarouselCard 
-  //                   CardImg={"https://picsum.photos/id/11/200/300"}
-  //                   CardTitle={"Lorem Ipsum 7"}
-  //                   CardText={"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."}
-  //                   buttonName={"Go Somewhere"}
-  //                   />
-  //               <CarouselCard 
-  //                   CardImg={"https://picsum.photos/id/11/200/300"}
-  //                   CardTitle={"Lorem Ipsum 8"}
-  //                   CardText={"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."}
-  //                   buttonName={"Go Somewhere"}
-  //                   />
-  //               <CarouselCard 
-  //                   CardImg={"https://picsum.photos/id/11/200/300"}
-  //                   CardTitle={"Lorem Ipsum 9"}
-  //                   CardText={"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."}
-  //                   buttonName={"Go Somewhere"}
-  //                   />
-  //           </CarouselRow>
-  //     </Carousel.Item>
-  //   </Carousel>
-  // );
 }
 
 export default CarouselCards;
