@@ -2,25 +2,27 @@ import Accordion from 'react-bootstrap/Accordion';
 import ListGroup from 'react-bootstrap/ListGroup';
 
 
-function AccordList() {
-  return (
-    <>
-        <Accordion.Header>Accordion Item #1</Accordion.Header>
-        <Accordion.Body>
-            <ListGroup defaultActiveKey="#link1">
-                <ListGroup.Item action href="#link1">
-                    Link 1
-                </ListGroup.Item>
-                <ListGroup.Item action href="#link2">
-                    Link 2
-                </ListGroup.Item>
-                <ListGroup.Item action href="#link3">
-                    Link 3
-                </ListGroup.Item>
-            </ListGroup>
-        </Accordion.Body>
-    </>
-  );
+function AccordList(props) {
+
+    let ListGroupItems = []
+    props.list.forEach(function (item) {
+        ListGroupItems.push(
+            <ListGroup.Item action href={item.link}>
+                {item.name}
+            </ListGroup.Item>
+        )
+    });
+    
+    return (
+        <>
+            <Accordion.Header>{props.name}</Accordion.Header>
+            <Accordion.Body>
+                <ListGroup defaultActiveKey={props.list[0].link}>
+                    {ListGroupItems}
+                </ListGroup>
+            </Accordion.Body>
+        </>
+    );
 }
 
 export default AccordList;

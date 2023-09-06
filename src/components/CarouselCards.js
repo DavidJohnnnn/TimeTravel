@@ -18,7 +18,6 @@ const CarouselCards = () => {
     />
   ));
 
-
   /* If one set of cards has two empty cards */
   if (ans.length % 3 === 1) {
     ans.push(<CarouselCard empty={true} />, <CarouselCard empty={true} />);
