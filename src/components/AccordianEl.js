@@ -19,7 +19,7 @@ function AccordianEl(props) {
   }
 
   return (
-    <Accordion>
+    <Accordion alwaysOpen>
       {AList}
     </Accordion>
   );

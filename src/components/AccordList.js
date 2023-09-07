@@ -1,5 +1,7 @@
 import Accordion from 'react-bootstrap/Accordion';
 import ListGroup from 'react-bootstrap/ListGroup';
+import Card from 'react-bootstrap/Card';
+
 
 
 function AccordList(props) {
@@ -17,9 +19,12 @@ function AccordList(props) {
         <>
             <Accordion.Header>{props.name}</Accordion.Header>
             <Accordion.Body>
-                <ListGroup defaultActiveKey={props.list[0].link}>
-                    {ListGroupItems}
-                </ListGroup>
+                <Card style={{textAlign : "left"}}>
+                    <ListGroup defaultActiveKey={props.list[0].link}>
+                        {ListGroupItems}
+                    </ListGroup>
+                </Card>
+                
             </Accordion.Body>
         </>
     );
