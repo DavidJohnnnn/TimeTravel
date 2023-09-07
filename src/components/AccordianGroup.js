@@ -23,13 +23,19 @@ function AccordianGroup() {
             <h4>Lorem IpsumvLorem IpsumLorem Ipsum</h4>
             <Row className="g-2">
             <Col>
-                <AccordianEl />
+                <AccordianEl 
+                    accordList={resultjson[0]}
+                />
             </Col>
             <Col>
-                <AccordianEl />
+                <AccordianEl 
+                    accordList={resultjson[1]}
+                />
             </Col>
             <Col>
-                <AccordianEl />
+                <AccordianEl 
+                    accordList={resultjson[2]}
+                />
             </Col>
             </Row>
         </Container>

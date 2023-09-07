@@ -2,27 +2,23 @@ import Accordion from 'react-bootstrap/Accordion';
 import AccordList from './AccordList';
 
 
-function AccordianEl() {
+function AccordianEl(props) {
+
+  let AList = []
+  for (let i=0; i<props.accordList; i++){
+    AList.push(
+      <Accordion.Item eventKey={i}>
+        <AccordList 
+          name={props.accordList[i].name}
+          list={props.accordList[i].list}
+        />
+      </Accordion.Item>
+    );
+  }
+
   return (
     <Accordion>
-      <Accordion.Item eventKey="0">
-        <AccordList />
-      </Accordion.Item>
-      <Accordion.Item eventKey="1">
-        <AccordList />
-      </Accordion.Item>
-      <Accordion.Item eventKey="2">
-        <AccordList />
-      </Accordion.Item>
-      <Accordion.Item eventKey="3">
-        <AccordList />
-      </Accordion.Item>
-      <Accordion.Item eventKey="4">
-        <AccordList />
-      </Accordion.Item>
-      <Accordion.Item eventKey="5">
-        <AccordList />
-      </Accordion.Item>
+      {AList}
     </Accordion>
   );
 }
