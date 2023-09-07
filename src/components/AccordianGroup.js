@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col';
 import AccordianEl from './AccordianEl';
 
 function AccordianGroup() {
-    /* importing set of cards from local folder as JSON */
+    // importing set of cards from local folder as JSON 
     let accordjson = require('../Accordian.json');
 
     // spliting array into three equal arrays
