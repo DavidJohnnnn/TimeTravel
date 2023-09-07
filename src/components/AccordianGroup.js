@@ -13,10 +13,6 @@ function AccordianGroup() {
         resultjson.push(accordjson.splice(0, Math.ceil(accordjson.length / i)));
     }
 
-    console.log(resultjson);
-
-
-
     return (
         <Container className="px-4">
             <h1>Lorem Ipsum</h1>

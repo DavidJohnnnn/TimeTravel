@@ -4,8 +4,10 @@ import AccordList from './AccordList';
 
 function AccordianEl(props) {
 
+  
   let AList = []
-  for (let i=0; i<props.accordList; i++){
+  
+  for (let i=0; i<props.accordList.length; i++){
     AList.push(
       <Accordion.Item eventKey={i}>
         <AccordList 
