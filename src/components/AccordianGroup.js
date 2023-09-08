@@ -3,9 +3,13 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import AccordianEl from './AccordianEl';
 
-function AccordianGroup() {
+
+function AccordianGroup(props) {
+    console.log(Math.random());
+
     // importing set of cards from local folder as JSON 
-    let accordjson = require('../Accordian.json');
+    let oldaccordjson = props.accordjson;
+    let accordjson = [...oldaccordjson]; // need this line because otherwise interferes with accordian population when clicking other navlinks and returning to home.
 
     // spliting array into three equal arrays
     let resultjson = [];

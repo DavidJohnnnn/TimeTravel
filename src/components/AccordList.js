@@ -5,7 +5,6 @@ import Card from 'react-bootstrap/Card';
 
 
 function AccordList(props) {
-
     let ListGroupItems = []
     // Creating group of links from local json
     props.list.forEach(function (item) {

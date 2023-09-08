@@ -7,6 +7,8 @@ import AccordianGroup from './AccordianGroup';
 
 
 function Home() {
+  let accordjson = require('../Accordian.json');
+  
   return (
     <Container className="Page" fluid>
       <Jumbotron
@@ -24,7 +26,7 @@ function Home() {
       <br />
 
 
-      <AccordianGroup />
+      <AccordianGroup accordjson={accordjson}/>
 
       <br />
       <br />
