@@ -29,7 +29,7 @@ function NavMenu () {
                             <Nav.Link as={Link} to="/" className="TimeNavItem justify-content-end"><NavLink to='/'>Home</NavLink></Nav.Link>
                             <Nav.Link as={Link} to="/About" className="TimeNavItem justify-content-end">About</Nav.Link>
                             <Nav.Link as={Link} to="/Contact" className="TimeNavItem justify-content-end">Contact</Nav.Link>
-                            <Nav.Link as={Link} to="/Link4" className="TimeNavItem justify-content-end">Link 4</Nav.Link>
+                            <Nav.Link as={Link} to="/FAQ" className="TimeNavItem justify-content-end">FAQ</Nav.Link>
                             <Nav.Link as={Link} to="/Link5" className="TimeNavItem justify-content-end">Link 5</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
