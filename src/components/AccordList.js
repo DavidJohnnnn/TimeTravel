@@ -1,8 +1,25 @@
 import Accordion from 'react-bootstrap/Accordion';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Card from 'react-bootstrap/Card';
+import { useAccordionButton } from 'react-bootstrap/AccordionButton';
+import Navbar from 'react-bootstrap/Navbar';
 
-
+// Using function from Bootstrap React
+function CustomToggle({ children, eventKey }) {
+    const decoratedOnClick = useAccordionButton(eventKey, () =>
+      console.log('totally custom!'),
+    );
+  
+    return (
+      <button
+        type="button"
+        style={{ backgroundColor: 'pink' }}
+        onClick={decoratedOnClick}
+      >
+        {children}
+      </button>
+    );
+  }
 
 function AccordList(props) {
     let ListGroupItems = []
