@@ -12,6 +12,7 @@ function AccordianEl(props) {
         <AccordList 
           name={props.accordList[i].name}
           list={props.accordList[i].list}
+          num={i}
         />
       </Accordion.Item>
     );
