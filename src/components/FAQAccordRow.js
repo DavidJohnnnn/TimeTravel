@@ -9,10 +9,10 @@ function FAQAccordRow(props) {
     AList.push(
       <Accordion.Item eventKey={i}>
         <Accordion.Header>
-            {props.accordList.q}
+            {props.accordList[i].q}
         </Accordion.Header>
         <Accordion.Body>
-            {props.accordList.a}
+            {props.accordList[i].a}
         </Accordion.Body>
       </Accordion.Item>
     );
