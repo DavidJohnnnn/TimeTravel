@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './Page.css';
 import CarouselCards from './CarouselCards';
 import AccordianGroup from './AccordianGroup';
-import Footer from './Footer';
 
 
 function Home() {
@@ -28,11 +27,6 @@ function Home() {
 
 
       <AccordianGroup accordjson={accordjson}/>
-
-      <br />
-      <br />
-
-      <Footer />
     </Container>
   );
 }

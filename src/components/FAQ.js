@@ -20,6 +20,7 @@ function FAQ() {
             <br />
             
             <FAQAccord accordjson={accordjson}/>
+
         </Container>
     );
 }

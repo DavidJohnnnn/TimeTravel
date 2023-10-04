@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import NavMenu from './components/NavMenu';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Main from './Main';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -11,6 +12,10 @@ function App() {
     <Container className="App" fluid>
       <NavMenu />
       <Main />
+      
+      <br />
+      <br />
+      <Footer />
     </Container>
   );
 }

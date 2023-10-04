@@ -1,55 +1,41 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import ListGroup from 'react-bootstrap/ListGroup';
 import './Footer.css';
 
 function Footer() {
     return (
         <div className="bottomBox">
             <Container fluid className="bottomDiv">
-                <Row>
+                <Row style={{textAlign: "center"}}>
                     <Col>
-                        <h6>About</h6>
-                        <ListGroup>
-                            <ListGroup.Item variant="dark" action href="#link1">
-                                Link 1
-                            </ListGroup.Item>
-                            <ListGroup.Item action href="#link2">
-                                Link 2
-                            </ListGroup.Item>
-                            <ListGroup.Item action href="">
-                                Link 3
-                            </ListGroup.Item>
-                        </ListGroup>
+                        <h6>Company</h6>
+                        <ul style={{listStyle: "none"}}>
+                            <li>item 1</li>
+                            <li>item 2</li>
+                            <li>item 3</li>
+                        </ul>
                     </Col>
                     <Col>
-                        <h6>About</h6>
-                        <ListGroup>
-                            <ListGroup.Item action href="#link1">
-                                Link 1
-                            </ListGroup.Item>
-                            <ListGroup.Item action href="#link2">
-                                Link 2
-                            </ListGroup.Item>
-                            <ListGroup.Item action href="">
-                                Link 3
-                            </ListGroup.Item>
-                        </ListGroup>
+                        <h6>Contact</h6>
+                        <ul style={{listStyle: "none"}}>
+                            <li>item 1</li>
+                            <li>item 2</li>
+                            <li>item 3</li>
+                            <li>item 4</li>
+                            <li>item 5</li>
+                            <li>item 6</li>
+                        </ul>
                     </Col>
                     <Col>
-                        <h6>About</h6>
-                        <ListGroup>
-                            <ListGroup.Item action href="#link1">
-                                Link 1
-                            </ListGroup.Item>
-                            <ListGroup.Item action href="#link2">
-                                Link 2
-                            </ListGroup.Item>
-                            <ListGroup.Item action href="">
-                                Link 3
-                            </ListGroup.Item>
-                        </ListGroup>
+                        <h6>More</h6>
+                        <ul style={{listStyle: "none"}}>
+                            <li>item 1</li>
+                            <li>item 2</li>
+                            <li>item 3</li>
+                            <li>item 4</li>
+                            <li>item 5</li>
+                        </ul>
                     </Col>
                 </Row>
                 <Row>
