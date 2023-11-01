@@ -12,6 +12,10 @@ import {BrowserRouter} from 'react-router-dom';
 //   </React.StrictMode>
 // );
 
+
+//const root = ReactDOM.createRoot(document.getElementById('root'));
+
+
 ReactDOM.render((
   <BrowserRouter>
     <App /> {/* The various pages will be displayed by the `Main` component. */}
