@@ -11,7 +11,7 @@ import "./Jumbotron.css";
 /* Wrapper for Jumbotron to contain card */
 let JumbotronWrapper = (props) => {
     return (
-        <Container className="jumbotron" style={ {backgroundImage: "url(" + props.JumImg + ")"}}>
+        <Container className="jumbotron" style={ {backgroundImage: "url(" + props.JumImg + ")", backgroundSize: "fill"}}>
             <Row>
                 <Col xs={7}>{props.children}</Col>
                 <Col></Col> {/* Space added for this column */}
