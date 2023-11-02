@@ -12,16 +12,13 @@ import {BrowserRouter} from 'react-router-dom';
 //   </React.StrictMode>
 // );
 
-
-//const root = ReactDOM.createRoot(document.getElementById('root'));
-
-
-ReactDOM.render((
+const entryPoint = document.getElementById('root');
+ReactDOM.createRoot(entryPoint).render(
   <BrowserRouter>
     <App /> {/* The various pages will be displayed by the `Main` component. */}
   </BrowserRouter>
-  ), document.getElementById('root')
 );
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
