@@ -11,41 +11,44 @@ import "./Jumbotron.css";
 /* Wrapper for Jumbotron to contain card */
 let JumbotronWrapper = (props) => {
     return (
-        <Container className="jumbotron" style={ {backgroundImage: "url(" + props.JumImg + ")", backgroundSize: "fill"}}>
-            <Row>
-                <Col xs={7}>{props.children}</Col>
-                <Col></Col> {/* Space added for this column */}
-            </Row>
-        </Container>
+      <Container
+        className="jumbotron"
+        style={{
+          backgroundImage: "url(" + props.JumImg + ")",
+          backgroundSize: "fill",
+        }}
+      >
+        <Row>
+          <Col xs={7}>{props.children}</Col>
+          <Col></Col> {/* Space added for this column */}
+        </Row>
+      </Container>
     );
 }
 
 /* Jumbotron card */
 let JumbotronCard = (props) => {
     return (
-        <Card className="jumboCard">
-            <Card.Body>
-                <Card.Title>{props.CardTle}</Card.Title>
-                <Card.Text>
-                {props.CardTxt}
-                </Card.Text>
-                <Button variant="primary">{props.BtnTxt}</Button>
-            </Card.Body>
-        </Card>
+      <Card className="jumboCard">
+        <Card.Body>
+          <Card.Title>{props.CardTle}</Card.Title>
+          <Card.Text>{props.CardTxt}</Card.Text>
+          <Button variant="primary">{props.BtnTxt}</Button>
+        </Card.Body>
+      </Card>
     );
 }
 
 function Jumbotron (props) {
      
     return (
-        <JumbotronWrapper JumImg={props.JumImg}>
-            <JumbotronCard 
-                CardTle={props.CardTle}
-                CardTxt={props.CardTxt}
-                BtnTxt={props.BtnTxt}
-                />
-        </JumbotronWrapper>
-        
+      <JumbotronWrapper JumImg={props.JumImg}>
+        <JumbotronCard
+          CardTle={props.CardTle}
+          CardTxt={props.CardTxt}
+          BtnTxt={props.BtnTxt}
+        />
+      </JumbotronWrapper>
     );
 }
 

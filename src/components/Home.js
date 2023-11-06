@@ -13,21 +13,20 @@ function Home() {
   return (
     <Container className="Page" fluid>
       <Jumbotron
-        JumImg={randomPic}
+        JumImg="https://picsum.photos/2000/1440"
         CardTle="Special title treatment"
         CardTxt="With supporting text below as a natural lead-in to additional content."
         BtnTxt="Go somewhere"
       />
       <br />
       <br />
-      
+
       <CarouselCards />
 
       <br />
       <br />
 
-
-      <AccordianGroup accordjson={accordjson}/>
+      <AccordianGroup accordjson={accordjson} />
     </Container>
   );
 }
