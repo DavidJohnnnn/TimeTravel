@@ -7,13 +7,24 @@ import {NavLink} from 'react-router-dom';
 import { Route, Link } from 'react-router-dom';
 
 import "./NavMenu.css";
+import logo from '../logo192.png';
 
 function NavMenu () {
     return (
         <Container fluid className='NavContain'>
             <Navbar expand="lg" className="bg-body-tertiary TimeNav justify-content-end">
                 <Container>
-                    <Navbar.Brand as={Link} to="/" className="TimeNavBrand">Whenipedia</Navbar.Brand>
+
+                    <Navbar.Brand as={Link} to="/" className="TimeNavBrand">
+                        <img
+                            alt=""
+                            src={logo}
+                            width="30"
+                            height="30"
+                            className="d-inline-block align-top"
+                        />{' '}
+                        Whenipedia
+                    </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
