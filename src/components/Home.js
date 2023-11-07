@@ -4,12 +4,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './Page.css';
 import CarouselCards from './CarouselCards';
 import AccordianGroup from './AccordianGroup';
+import ACCORDJSON from '../Accordian.json';
 
 
 function Home() {
-  let accordjson = require('../Accordian.json');
+  // console.log(ACCORDJSON);
+  //let accordjson = require('../Accordian.json');
   //{Math.floor(Math.random() * (200 - 1) + 0)}
-  let randomPic = "https://picsum.photos/id/" +Math.floor(Math.random() * (200 - 1) + 0) +"/200/300";
+  // let randomPic = "https://picsum.photos/id/" +Math.floor(Math.random() * (200 - 1) + 0) +"/200/300";
   return (
     <Container className="Page" fluid>
       <Jumbotron
@@ -26,7 +28,7 @@ function Home() {
       <br />
       <br />
 
-      <AccordianGroup accordjson={accordjson} />
+      <AccordianGroup accordjson={ACCORDJSON} />
     </Container>
   );
 }

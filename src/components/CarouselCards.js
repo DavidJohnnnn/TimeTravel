@@ -1,14 +1,15 @@
 import Carousel from 'react-bootstrap/Carousel';
 import CarouselRow from './CarouselRow';
 import CarouselCard from './CarouselCard';
+import CAROUSELITEMS from '../example.json';
 
 const CarouselCards = () => {
   /* importing set of cards from local folder as JSON */
-  let exampleJSON = require('../example.json');
-  console.log(exampleJSON);
+  //let exampleJSON = require('../example.json');
+  // console.log(CAROUSELITEMS);
   
   /* creating a set of cards for that can be inserted into carousel */
-  let ans = exampleJSON.map((variant) => (
+  let ans = CAROUSELITEMS.map((variant) => (
     <CarouselCard
       height={200}
       CardImg={variant.cardimage}
