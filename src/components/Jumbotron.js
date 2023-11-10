@@ -10,12 +10,10 @@ import "./Jumbotron.css";
 
 /* Wrapper for Jumbotron to contain card */
 let JumbotronWrapper = (props) => {
-
-  console.log("rand", props.rand)
   return (
     <Container
       className="jumbotron"
-      style={{
+      style={{  // props.rand is jumboImg from Jumbotron component below
         backgroundImage: "url(https://picsum.photos/id/"+ props.rand + "/2000/1440)",
         backgroundSize: "fill",
       }}
@@ -37,8 +35,7 @@ let JumbotronCard = (props) => {
         <Card.Text>{props.CardTxt}</Card.Text>
         <Button
           variant="primary"
-          onClick={() => {
-            console.log("pressed");
+          onClick={() => {  // setting on button click to setState from Jumbotron component
             props.onSelect(Math.floor(Math.random() * 150));
           }}
         >
@@ -50,17 +47,15 @@ let JumbotronCard = (props) => {
 }
 
 function Jumbotron (props) {
-  const [jumboImg, setJumboImg] = useState(Math.floor(Math.random() * 400)); // simple useState to reload the function and the image
-  console.log(jumboImg);
+  const [jumboImg, setJumboImg] = useState(Math.floor(Math.random() * 150)); // simple useState to reload the function and the image
   
-  console.log("url(" + props.JumImg + ")");
   return (
     <JumbotronWrapper JumImg={props.JumImg} rand={jumboImg}>
       <JumbotronCard
         CardTle={props.CardTle}
         CardTxt={props.CardTxt}
         BtnTxt={props.BtnTxt}
-        onSelect={setJumboImg}
+        onSelect={setJumboImg}  // Send setState function to button in JumbotronCard so element is reloaded whenever button on Jumbotron is pressed.
       />
     </JumbotronWrapper>
   );
