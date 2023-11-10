@@ -10,11 +10,13 @@ import "./Jumbotron.css";
 
 /* Wrapper for Jumbotron to contain card */
 let JumbotronWrapper = (props) => {
+
+  console.log("rand", props.rand)
   return (
     <Container
       className="jumbotron"
       style={{
-        backgroundImage: "url(" + props.JumImg + ")",
+        backgroundImage: "url(https://picsum.photos/id/"+ props.rand + "/2000/1440)",
         backgroundSize: "fill",
       }}
     >
@@ -33,7 +35,13 @@ let JumbotronCard = (props) => {
       <Card.Body>
         <Card.Title>{props.CardTle}</Card.Title>
         <Card.Text>{props.CardTxt}</Card.Text>
-        <Button variant="primary" onClick={() => {console.log("pressed"); props.onSelect(Math.random());}}>
+        <Button
+          variant="primary"
+          onClick={() => {
+            console.log("pressed");
+            props.onSelect(Math.floor(Math.random() * 150));
+          }}
+        >
           {props.BtnTxt}
         </Button>
       </Card.Body>
@@ -42,11 +50,12 @@ let JumbotronCard = (props) => {
 }
 
 function Jumbotron (props) {
-  const [jumboImg, setJumboImg] = useState("0"); // simple useState to reload the function and the image
+  const [jumboImg, setJumboImg] = useState(Math.floor(Math.random() * 400)); // simple useState to reload the function and the image
   console.log(jumboImg);
+  
   console.log("url(" + props.JumImg + ")");
   return (
-    <JumbotronWrapper JumImg={props.JumImg}>
+    <JumbotronWrapper JumImg={props.JumImg} rand={jumboImg}>
       <JumbotronCard
         CardTle={props.CardTle}
         CardTxt={props.CardTxt}
