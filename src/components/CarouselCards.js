@@ -11,6 +11,7 @@ const CarouselCards = () => {
   /* creating a set of cards for that can be inserted into carousel */
   let ans = CAROUSELITEMS.map((variant) => (
     <CarouselCard
+      key={variant.key}
       height={200}
       CardImg={variant.cardimage}
       CardTitle={variant.cardtitle}
@@ -33,7 +34,7 @@ const CarouselCards = () => {
   let final = [];
   for (let i=0; i < ans.length; i+= 3) {    
     final.push(
-      <Carousel.Item>
+      <Carousel.Item key={i}>
         <CarouselRow>
             {ans.slice(i, i+3)}
         </CarouselRow>
