@@ -46,16 +46,14 @@ let JumbotronCard = ({CardTle, CardTxt, onSelect, BtnTxt}) => {
   );
 }
 
-function Jumbotron ({JumImg, CardTle, CardTxt, BtnTxt}) {
+function Jumbotron ({JumImg, ...props}) {
   const [jumboImg, setJumboImg] = useState(Math.floor(Math.random() * 150)); // simple useState to reload the function and the image
   
   return (
     <JumbotronWrapper JumImg={JumImg} rand={jumboImg}>
       <JumbotronCard
-        CardTle={CardTle}
-        CardTxt={CardTxt}
-        BtnTxt={BtnTxt}
         onSelect={setJumboImg}  // Send setState function to button in JumbotronCard so element is reloaded whenever button on Jumbotron is pressed.
+        {...props}
       />
     </JumbotronWrapper>
   );
