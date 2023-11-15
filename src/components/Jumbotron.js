@@ -4,6 +4,7 @@ import Col from 'react-bootstrap/Col';
 import { useState } from 'react';
 
 import "./Jumbotron.css";
+import JumbotronCard from './JumbotronCard';
 
 /* Compartmentalizing text for readability */
 
@@ -25,7 +26,7 @@ let JumbotronWrapper = (props) => {
   );
 }
 
-function Jumbotron ({JumImg, JumbotronContent, ...props}) {
+function Jumbotron ({JumImg, JumbotronContent = JumbotronCard, ...props}) {
   const [jumboImg, setJumboImg] = useState(Math.floor(Math.random() * 150)); // simple useState to reload the function and the image
   
   return (
