@@ -5,6 +5,7 @@ import './Page.css';
 import CarouselCards from './CarouselCards';
 import AccordianGroup from './AccordianGroup';
 import ACCORDJSON from '../Accordian.json';
+import JumbotronCard from './JumbotronCard';
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
         CardTle="Special title treatment"
         CardTxt="With supporting text below as a natural lead-in to additional content."
         BtnTxt="Go somewhere"
+        JumbotronContent={JumbotronCard}
       />
       <br />
       <br />
