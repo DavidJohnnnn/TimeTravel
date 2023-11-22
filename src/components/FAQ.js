@@ -14,6 +14,7 @@ function FAQ() {
                 CardTle="Special title treatment"
                 CardTxt="With supporting text below as a natural lead-in to additional content."
                 BtnTxt="Go somewhere"
+                btnAppear={false}
             />
 
             <br />
