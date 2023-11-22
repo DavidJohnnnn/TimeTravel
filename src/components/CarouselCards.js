@@ -17,6 +17,7 @@ const CarouselCards = () => {
       CardTitle={variant.cardtitle}
       CardText={variant.cardtext}
       buttonName={variant.buttonname}
+      buttontype={variant.buttontype}
     />
   ));
 

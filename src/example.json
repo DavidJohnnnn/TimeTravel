@@ -9,7 +9,8 @@
       "cardimage": "https://picsum.photos/id/12/200/300",
       "cardtitle": "Lorem Ipsum 2a",
       "cardtext": "Neque porro  est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. Neque  quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
-      "buttonname": "Go Somewhere"
+      "buttonname": "Go Somewhere",
+      "buttontype": "secondary"
     },
     {
       "cardimage": "https://picsum.photos/id/13/200/300",
@@ -21,7 +22,8 @@
         "cardimage": "https://picsum.photos/id/14/200/300",
         "cardtitle": "Lorem Ipsum 4a",
         "cardtext": "Neque porro quisquam qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. Neque porro  est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
-        "buttonname": "Go Somewhere"
+        "buttonname": "Go Somewhere",
+        "buttontype": "warning"
       },
       {
         "cardimage": "https://picsum.photos/id/15/200/300",
@@ -33,7 +35,8 @@
         "cardimage": "https://picsum.photos/id/16/200/300",
         "cardtitle": "Lorem Ipsum 6a",
         "cardtext": "Neque porro quisquam est qui ipsum quia dolor sit amet, consectetur, adipisci velit. Neque porro  est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
-        "buttonname": "Go Somewhere"
+        "buttonname": "Go Somewhere",
+        "buttontype": "info"
       },
       {
         "cardimage": "https://picsum.photos/id/17/200/300",
@@ -51,7 +54,8 @@
         "cardimage": "https://picsum.photos/id/19/200/300",
         "cardtitle": "Lorem Ipsum 9a",
         "cardtext": "Neque porro quisquam est qui dolorem ipsum quia sit amet, consectetur, adipisci velit. Neque porro  est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
-        "buttonname": "Go Somewhere"
+        "buttonname": "Go Somewhere",
+        "buttontype": "light"
       },
       {
         "cardimage": "https://picsum.photos/id/20/200/300",
