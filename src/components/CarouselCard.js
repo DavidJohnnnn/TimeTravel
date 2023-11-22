@@ -30,9 +30,13 @@ const CarouselCard = ({
           <Card.Text style={{ textAlign: "left" }}>
             {CardText.substring(0, 120) + "..."}
           </Card.Text>
-          <Button variant={buttontype === null ? "primary" : buttontype}>
-            {buttonName}
-          </Button>
+          {buttontype === null ? (
+            <Button variant="outline-primary">
+              {buttonName}
+            </Button>
+          ) : (
+            <Button variant={buttontype}>{buttonName}</Button>
+          )}
         </Card.Body>
       </Card>
     </Col>
