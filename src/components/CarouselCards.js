@@ -3,11 +3,7 @@ import CarouselRow from './CarouselRow';
 import CarouselCard from './CarouselCard';
 import CAROUSELITEMS from '../example.json';
 
-const CarouselCards = () => {
-  /* importing set of cards from local folder as JSON */
-  //let exampleJSON = require('../example.json');
-  // console.log(CAROUSELITEMS);
-  
+const CarouselCards = () => {  
   /* creating a set of cards for that can be inserted into carousel */
   let ans = CAROUSELITEMS.map((variant) => (
     <CarouselCard

@@ -3,10 +3,10 @@ import Jumbotron from './Jumbotron';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Page.css';
 import FAQAccord from './FAQAccord';
+import ACCORDJSON from '../FAQ.json';
 
 
 function FAQ() {
-    let accordjson = require('../FAQ.json');
     return (
         <Container className="Page" fluid>
             <Jumbotron
@@ -20,7 +20,7 @@ function FAQ() {
             <br />
             <br />
             
-            <FAQAccord accordjson={accordjson}/>
+            <FAQAccord accordjson={ACCORDJSON}/>
 
         </Container>
     );

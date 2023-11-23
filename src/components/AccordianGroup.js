@@ -8,8 +8,7 @@ function AccordianGroup(props) {
     console.log(Math.random());
 
     // importing set of cards from local folder as JSON 
-    let oldaccordjson = props.accordjson;
-    let accordjson = [...oldaccordjson]; // need this line because otherwise interferes with accordian population when clicking other navlinks and returning to home.
+    let accordjson = [...props.accordjson]; // need this line because otherwise interferes with accordian population when clicking other navlinks and returning to home.
 
     // spliting array into three equal arrays
     let resultjson = [];
